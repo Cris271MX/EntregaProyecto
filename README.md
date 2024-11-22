@@ -15,37 +15,19 @@ Paso 2: Configurar el entorno
     - Busca un archivo como .nenv.example ya que esta es la varible de entorno para levantar el back-end
    
 
-2. Instalar dependencias:
-    - Si el backend usa Node.js:
-        npm install
-    - Si usa Python:
+2. Instalar dependencia:
+    - Se usa Python:
         pip install -r requirements.txt
-    - Para otros entornos (Java, PHP, etc.), sigue las instrucciones del proyecto.
 
-Paso 3: Iniciar la base de datos
-    - Si el backend depende de una base de datos, asegúrate de que esté corriendo localmente o configurada en la nube.
-    - Por ejemplo, para una base de datos PostgreSQL:
-        docker-compose up -d  # Si hay un archivo docker-compose.yml
-    - Alternativamente, inicia el servidor de tu base de datos localmente.
 
-Paso 4: Ejecutar el backend
+Paso 3: Ejecutar el backend
     - Inicia el servidor:
-        - Node.js:
-            npm run dev
         - Python (Django/Flask):
             python manage.py runserver
-        - Java (Spring Boot):
-            mvn spring-boot:run
 
-    - Verifica que el backend esté corriendo en el puerto correspondiente, como http://localhost:3000.
+    - Verifica que el backend esté corriendo en el puerto correspondiente, como http://localhost:5000.
 
 2. Frontend (Front-end)
-
-Paso 1: Clonar el repositorio
-Si aún no tienes el repositorio clonado:
-
-git clone https://github.com/usuario/repositorio-frontend.git
-cd repositorio-frontend
 
 Paso 2: Instalar dependencias
 1. Instala las dependencias con el gestor de paquetes (por ejemplo, npm o yarn):
@@ -72,3 +54,4 @@ Paso 4: Ejecutar el frontend
     - Frontend: http://localhost:<puerto_frontend>
 
 2. Verifica que el frontend pueda consumir los servicios del backend correctamente.
+
